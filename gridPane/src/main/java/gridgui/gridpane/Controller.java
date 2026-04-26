@@ -41,7 +41,7 @@ public class Controller {
         canvasGC = canvas.getGraphicsContext2D();
         try{
             Path currentDir = Paths.get("").toAbsolutePath();
-            if(currentDir.toString().equals("/home/ubuntu/Documents/Bitwise_Pattern_Generatorinator/gridPane")){
+            if(currentDir.toString().endsWith("gridPane")){
                 currentDir = currentDir.getParent();
             }
             frameBufferPath = Paths.get(currentDir + "/frameBuffer.bin");
