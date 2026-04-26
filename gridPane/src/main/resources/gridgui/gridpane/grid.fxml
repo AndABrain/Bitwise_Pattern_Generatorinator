@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.layout.StackPane?>
+
+
+<StackPane xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gridgui.gridpane.Controller">
+   <children>
+      <Canvas fx:id="canvas" height="480.0" width="480.0" />
+   </children>
+</StackPane>
