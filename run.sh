@@ -1,5 +1,5 @@
 aarch64-linux-gnu-gcc -static -o arm arm.s
-command="<COPY_HERE>"
+command="<PASTE_HERE>"
 $command 2> /dev/null &
 processID=$! 
 trap "kill $processID" EXIT
