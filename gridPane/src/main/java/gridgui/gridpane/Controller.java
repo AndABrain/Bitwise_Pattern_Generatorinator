@@ -83,12 +83,12 @@ public class Controller {
     }
 
     public void fillBlack(int row, int col, int bitOffset){
-        canvasGC.setFill(Color.GRAY);
+        canvasGC.setFill(Color.BLACK);
         canvasGC.fillRect((bitOffset +col*8)*cellSize, row*cellSize, cellSize, cellSize);
     }
 
     public void fillWhite(int row, int col, int bitOffset){
-        canvasGC.setFill(Color.CYAN);
+        canvasGC.setFill(Color.WHITE);
         canvasGC.fillRect((bitOffset +col*8)*cellSize, row*cellSize, cellSize, cellSize);
     }
 
