@@ -139,7 +139,7 @@ func_readerLoop:
         BEQ func_clear
         CMP W7, #' '
         BEQ func_clear
-        CMP W7, #'v'
+        CMP W7, #'z'
         BEQ func__zebra
         CMP W7, #'h'
         BEQ func_horizontalStripes
@@ -147,7 +147,7 @@ func_readerLoop:
         BEQ func_checkerBoard
         CMP W7, #'s'
         BEQ func_stepsInit
-        CMP W7, #'y'
+        CMP W7, #'d'
         BEQ func_half
         // If the character isnt a valid key then we will see if we need to animate the screen (so we move down to the next line)
     .checkIfAnimating: 
