@@ -237,8 +237,8 @@ func_onOffBasedPattern:
 
 // clear the frame buffer through calling func_rowBasedPattern
 func_clear:
-    // set X5 to be the an intial bitmask of all zeros (its first row) and call func_rowBasedPattern
-    MOVZ X5, #0
+    // set X5 to be the an intial bitmask of all ones (its first row) and call func_rowBasedPattern
+    MOVN X5, #0
     B func_rowBasedPattern
 
 // create a zebra pattern in the frame buffer through calling func_rowBasedPattern with the zebra pattern bitmask as a parameter
