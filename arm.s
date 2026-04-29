@@ -315,6 +315,7 @@ func_half:
     MOV X4, X28 // the register containg the address which will be incremented over
     MOV X5, X20 // the bitmask for the half pattern
     MOV X6, X23 // the parameter for the upperbound of the iteration
+    MOVZ X19, #0
     .halfLoop:
         // Write the last 6 bytes stored in X5
         UBFX X9, X5, #0, #32
